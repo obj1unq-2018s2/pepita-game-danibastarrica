@@ -24,4 +24,28 @@ object pepita {
 		energia -= self.energiaParaVolar(posicion.distance(nuevaPosicion))
 		self.posicion(nuevaPosicion)
 	}	
+	method yaEstoyEn()
+	if (posicion(pepita)= posicion(ciudad)){
+		gameSay.(pepita. "yaEstoyEn")
+	}
+	 
 }
+
+
+object roque {
+	method encontrar(algo)= teEncontre(algo)
+	method teEncontre(algo)= (posicion(roque)=posicion(comida))
+	
+	method teEncontre(alguien)= (posicion(roque)=posicion(pepita))
+	method atraparComida(algo){
+		if(teEncontre(algo)){
+			algo.teEncontro
+			algo.move
+		}
+		
+	}
+	method darleDeComer(alguien){
+		
+	}
+}
+

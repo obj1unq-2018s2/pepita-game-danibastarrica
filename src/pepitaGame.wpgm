@@ -17,10 +17,14 @@ program PepitaGame {
 	game.addVisual(buenosAires)
 	game.addVisual(villaGesell)
 	game.addVisualCharacter(pepita)
+	game.addVisualCharacter(roque)
+	game.say(pepita, "yaEstoyEn!")
+	game.say(pepita, "dameDeComerPrimero!")
 
 //	TECLADO
 	keyboard.v().onPressDo { pepita.volaHacia(villaGesell) }
 	keyboard.b().onPressDo { pepita.volaHacia(buenosAires) }
+	keyboard.c().onPressDo{ roque.encontrar(algo)}
 		
 //	START
 	game.start()
