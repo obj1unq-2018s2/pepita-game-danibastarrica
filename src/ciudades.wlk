@@ -2,6 +2,7 @@ object villaGesell {
 	method imagen() = "ciudad.png"
 	method nombre() = "Villa Gesell"
 	method posicion() = game.at(8,3)
+	// TODO Faltan llaves, este código es incorrecto.
 	method teEncontro(alguien)
 }
 
